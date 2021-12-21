@@ -34,8 +34,16 @@ jobs:
       run : |
         yarn docs:build
 
-    - name: compile
-      uses: actions/upload-artifact@v2
-      with: 
-        name: build
-        path: ./dist
+    - name: Publish to GitHub Pages
+      # You may pin to the exact commit or the version.
+      # uses: tsunematsu21/actions-publish-gh-pages@c04b531c52b8f9d25c596bc6e6a7ddc116b2f3f8
+      uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+      with:
+        # The name of the directory that containing the content to be published
+        dir: ./dist
+        # The name of the remote branch that publishing source for GitHub Pages site
+        branch: master
+        # The remote repository that publishing source for GitHub Pages site, defaults to current repo and is formatted like 'user/repo-name'
+        repo: xiao-gy.github.io
+        # The personal access token that authorize repo access
+        token: ${{ secrets.publish }}
