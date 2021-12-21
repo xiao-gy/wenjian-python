@@ -93,7 +93,6 @@ module.exports = config({
     },
 
     blog: false,
-    home: false,
 
     footer: {
       display: true,
