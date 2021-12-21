@@ -28,10 +28,6 @@ module.exports = config({
     "/": {
       lang: "zh-CN",
     },
-    "/zh/": {
-      title: "python从爬虫到入门",
-      description: "A Tutorials for Python by xiao-gy",
-    },
   },
 
   themeConfig: {
@@ -67,17 +63,11 @@ module.exports = config({
     locales: {
       "/zh/": {
         nav: [
-          { text: "博客主页", link: "/zh/", icon: "home" },
           { text: "项目主页", link: "/zh/home/", icon: "home" },
           {
             text: "如何使用",
             icon: "creative",
             link: "/zh/guide/",
-          },
-          {
-            text: "主题文档",
-            icon: "note",
-            link: "https://vuepress-theme-hope.github.io/zh/",
           },
         ],
         sidebar: {
