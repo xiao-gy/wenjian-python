@@ -38,21 +38,15 @@ module.exports = config({
     logo: "/logo.svg",
     hostname: "https://vuepress-theme-hope-demo.mrhope.site",
 
-    author: "Mr.Hope",
-    repo: "https://github.com/vuepress-theme-hope/vuepress-theme-hope",
+    author: "xiao-gy",
+    repo: "https://github.com/xiao-gy/wenjian-python",
 
     nav: [
-      { text: "Blog Home", link: "/", icon: "home" },
       { text: "Project Home", link: "/home/", icon: "home" },
       {
         text: "Guide",
         icon: "creative",
         link: "/guide/",
-      },
-      {
-        text: "Docs",
-        link: "https://vuepress-theme-hope.github.io/",
-        icon: "note",
       },
     ],
 
@@ -74,17 +68,11 @@ module.exports = config({
     locales: {
       "/zh/": {
         nav: [
-          { text: "博客主页", link: "/zh/", icon: "home" },
           { text: "项目主页", link: "/zh/home/", icon: "home" },
           {
             text: "如何使用",
             icon: "creative",
             link: "/zh/guide/",
-          },
-          {
-            text: "主题文档",
-            icon: "note",
-            link: "https://vuepress-theme-hope.github.io/zh/",
           },
         ],
         sidebar: {
@@ -104,8 +92,8 @@ module.exports = config({
       },
     },
 
-    blog: flase,
-    home: flase
+    blog: false,
+    home: false,
 
     footer: {
       display: true,
