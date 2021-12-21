@@ -1,8 +1,8 @@
 const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
-  title: "Theme Demo",
-  description: "A demo for vuepress-theme-hope",
+  title: "python从爬虫到入门",
+  description: "A Tutorials for Python by xiao-gy",
 
   dest: "./dist",
 
@@ -26,32 +26,21 @@ module.exports = config({
 
   locales: {
     "/": {
-      lang: "en-US",
-    },
-    "/zh/": {
-      title: "Theme Demo",
-      description: "vuepress-theme-hope 的 demo",
-    },
+      lang: "zh-CN",
+    }
   },
 
   themeConfig: {
     logo: "/logo.svg",
-    hostname: "https://vuepress-theme-hope-demo.mrhope.site",
+    hostname: "https://docs.xiao-gy.ml",
 
-    author: "Mr.Hope",
-    repo: "https://github.com/vuepress-theme-hope/vuepress-theme-hope",
+    author: "xiao-gy",
+    repo: "https://github.com/xiao-gy/wenjian-python",
 
     nav: [
-      { text: "Blog Home", link: "/", icon: "home" },
-      { text: "Project Home", link: "/home/", icon: "home" },
-      {
-        text: "Guide",
-        icon: "creative",
-        link: "/guide/",
-      },
       {
         text: "Docs",
-        link: "https://vuepress-theme-hope.github.io/",
+        link: "https://docs.xiao-gy.ml",
         icon: "note",
       },
     ],
@@ -105,18 +94,12 @@ module.exports = config({
     },
 
     blog: {
-      intro: "/intro/",
-      sidebarDisplay: "mobile",
-      links: {
-        Zhihu: "https://zhihu.com",
-        Baidu: "https://baidu.com",
-        Github: "https://github.com",
-      },
+      blog: false
     },
 
     footer: {
       display: true,
-      content: "默认页脚",
+      content: "Made by xiao-gy",
     },
 
     comment: {
