@@ -26,7 +26,6 @@ module.exports = config({
 
   locales: {
     "/": {
-      lang: "zh-CN",
     },
     "/zh/": {
       title: "Python从爬虫到入门",
