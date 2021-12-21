@@ -1,8 +1,8 @@
 const { config } = require("vuepress-theme-hope");
 
 module.exports = config({
-  title: "Theme Demo",
-  description: "A demo for vuepress-theme-hope",
+  title: "Python从爬虫到入门",
+  description: "",
 
   dest: "./dist",
 
@@ -26,11 +26,11 @@ module.exports = config({
 
   locales: {
     "/": {
-      lang: "en-US",
+      lang: "zh-CN",
     },
     "/zh/": {
-      title: "Theme Demo",
-      description: "vuepress-theme-hope 的 demo",
+      title: "Python从爬虫到入门",
+      description: "",
     },
   },
 
@@ -104,19 +104,12 @@ module.exports = config({
       },
     },
 
-    blog: {
-      intro: "/intro/",
-      sidebarDisplay: "mobile",
-      links: {
-        Zhihu: "https://zhihu.com",
-        Baidu: "https://baidu.com",
-        Github: "https://github.com",
-      },
-    },
+    blog: flase,
+    home: flase
 
     footer: {
       display: true,
-      content: "默认页脚",
+      content: "来自 稳健IT社",
     },
 
     comment: {
