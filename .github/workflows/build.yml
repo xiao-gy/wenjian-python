@@ -44,6 +44,6 @@ jobs:
         # The name of the remote branch that publishing source for GitHub Pages site
         branch: master
         # The remote repository that publishing source for GitHub Pages site, defaults to current repo and is formatted like 'user/repo-name'
-        repo: xiao-gy.github.io
+        repo: xiao-gy/xiao-gy.github.io
         # The personal access token that authorize repo access
         token: ${{ secrets.publish }}
